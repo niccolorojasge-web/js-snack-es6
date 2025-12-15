@@ -51,10 +51,18 @@ function getRandomIntInclusive(min, max) {
 }
 
 for (let i = 0; i < squadre.length; i++) {
-squadre[i].punti = getRandomIntInclusive (0,50);
-squadre[i].falli = getRandomIntInclusive (0,50);
+    squadre[i].punti = getRandomIntInclusive(0, 50);
+    squadre[i].falli = getRandomIntInclusive(0, 50);
 }
-console.log(squadre[i])
+console.log(squadre)
 
+for (let i = 0; i < squadre.length; i++) {
+    const squadra = {
+        nome : squadre[i].nome,
+        falli : squadre[i].falli 
+    }
+    nuovoArray.push(squadra)
+}
+console.log(nuovoArray)
 
 
